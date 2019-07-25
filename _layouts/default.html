@@ -23,7 +23,7 @@
 	<body>
 		<nav>
 			<div class="container">
-				<a href="{{ site.baseurl }}/">{% include logo.html %}</a>
+				<a class="logo" href="{{ site.baseurl }}/">{% include icons/site.html icon="logo" %}<span>CHATSOTRE<span></a>
 			</div>
 		</nav>
 		<div class="content">
@@ -37,21 +37,21 @@
 				</div>
 
 				<div class="contact">
-					<address>
+					<!-- <address>
 						<a href="https://www.google.com/maps/place/{{ site.data.company.address | url_encode }}">
 							{% include icons/footer.html icon="place" %} {{ site.data.company.address }}
 						</a>
-					</address>
+					</address> -->
 					<p class="email">
 						<a href="mailto:{{ site.data.company.email }}">
 							{% include icons/footer.html icon="email" %} {{ site.data.company.email }}
 						</a>
 					</p>
-					<p class="phone">
+					<!-- <p class="phone">
 						<a href="tel:{{ site.data.company.phone | replace: ' ', '-' }}">
 							{% include icons/footer.html icon="phone" %} {{ site.data.company.phone }}
 						</a>
-					</p>
+					</p> -->
 				</div>
 
 				<div class="sharing">
@@ -61,17 +61,12 @@
 					<a class="twitter" href="https://twitter.com/{{ site.data.company.twitter }}">
 						{% include icons/social-media.html social_icon="twitter" %}
 					</a>
-					<a class="google-plus" href="https://plus.google.com/{{ site.data.company.google_plus }}">
+					<!-- <a class="google-plus" href="https://plus.google.com/{{ site.data.company.google_plus }}">
 						{% include icons/social-media.html social_icon="google-plus" %}
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</footer>
-		<p class="copyright">
-			<a href="https://cloudcannon.com/">
-				Template by CloudCannon
-			</a>
-		</p>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script type="text/javascript">
 			$('a[href*=\\#]').on('click', function(event){

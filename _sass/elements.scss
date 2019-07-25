@@ -111,3 +111,20 @@ form {
 		background: darken($brand-color, 5%);
 	}
 }
+
+.logo {
+    color: $brand-color;
+    font-size: 27px;
+	text-decoration: none;
+}
+
+.logo svg{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo span{
+	display: inline-block;
+	vertical-align: middle;
+	font-family: unset;
+}
