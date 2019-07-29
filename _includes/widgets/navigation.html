@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+    <div class="container">
+        <a href="{{ site.baseurl }}/index.html" class="navbar-brand">ChatSt<i class="lni-shopping-basket"></i>re</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#home">Home</a>
+                </li>
+
+                {% for widget in site.data.widgets %}
+
+                {% if widget.enabled == true and  widget.display_name != nil %}
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#{{ widget.name }}">{{ widget.display_name }}</a>
+                </li>
+
+                {% endif %}
+
+                {% endfor %}
+
+                <li>
+                    <button type="button" class="btn btn-singin" data-toggle="modal" data-target="#exampleModal">
+                        Subscribe
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js">
+                </script>
+                <script>
+                    hbspt.forms.create({
+                        portalId: "6158522",
+                        formId: "f65b1451-b265-41be-b03e-adcb30f1ac81",
+                        onFormSubmit: function ($form) {
+                            $('#exampleModal').modal('hide');
+                        }
+                    });
+
+                    var checkExist = setInterval(function () {
+                        if ($('#hs-form-iframe-0').length) {
+                            $("#hs-form-iframe-0").contents().find(".hubspot-link__container")
+                                .remove();
+                            clearInterval(checkExist);
+                        }
+                    }, 100);
+                </script>
+                <p>Subscribe to receive the latest news and progress of the project.</p>
+            </div>
+        </div>
+    </div>
+</div>

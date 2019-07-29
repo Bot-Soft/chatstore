@@ -1,0 +1,34 @@
+- name: get-started
+  display_name: Get Started
+  enabled: true
+
+- name: business-plan
+  enabled: true
+
+- name: features
+  display_name: Services
+  enabled: false
+  
+- name: showcase
+  display_name: Showcases
+  enabled: false
+  
+- name: pricing
+  display_name: Pricing
+  enabled: false
+  
+- name: team
+  display_name: Team
+  enabled: false
+  
+- name: testimonial
+  enabled: false
+  
+- name: blog
+  display_name: Blog
+  enabled: false
+  
+- name: contactus
+  display_name: Subscribe
+  enabled: false
+  

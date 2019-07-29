@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -12,7 +13,7 @@ img {
 }
 
 hr {
-	height:1px;
+	height: 1px;
 	border: 0;
 	background-color: #ddd;
 	margin-bottom: 50px;
@@ -43,6 +44,7 @@ p {
 
 nav {
 	padding: 30px 0;
+
 	svg {
 		fill: $brand-color;
 		height: 35px;
@@ -65,7 +67,8 @@ form {
 		border: 1px solid #ddd;
 
 
-		&, &:focus {
+		&,
+		&:focus {
 			border-top-left-radius: 30px;
 			border-bottom-left-radius: 30px;
 		}
@@ -86,7 +89,9 @@ form {
 	}
 }
 
-.button a, input[type="submit"], input[type="text"] {
+.button a,
+input[type="submit"],
+input[type="text"] {
 	border: 0;
 	padding: 15px 40px;
 	box-sizing: content-box;
@@ -94,9 +99,10 @@ form {
 	font-weight: 100;
 }
 
-.button a, input[type="submit"] {
-	background: $brand-color;
-	color: #fff;
+.button a,
+input[type="submit"] {
+	background: $second-color;
+	color: $brand-color;
 	cursor: pointer;
 	font-weight: bold;
 }
@@ -108,23 +114,38 @@ form {
 	transition: 200ms ease-in background;
 
 	&:hover {
+		background: darken($second-color, 5%);
+	}
+}
+
+.primary {
+	background: $brand-color !important;
+	color: #ffffff !important;
+
+	&:hover {
 		background: darken($brand-color, 5%);
 	}
 }
 
 .logo {
-    color: $brand-color;
-    font-size: 27px;
+	color: $brand-color;
+	font-size: 27px;
 	text-decoration: none;
 }
 
-.logo svg{
+.logo svg {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.logo span{
+.logo span {
 	display: inline-block;
 	vertical-align: middle;
 	font-family: unset;
+}
+
+.image .icon {
+	font-size: 35px;
+	padding: 15px;
+	color: $brand-color;
 }

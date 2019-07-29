@@ -1,22 +1,24 @@
 # ----
 # Site
 
-title: Cause Template
-url: https://clean-oryx.cloudvent.net
-baseurl:
-google_analytics_key:
+title: ChatStore
+url: https://botsoft.ai
+baseurl: 
+google_analytics_key: UA-144733108-1
+
+excerpt_separator: <!--more-->
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Jekyll template with example content for a not-for-profit organisation.
+description: Streamline the Selling Process Online
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Cause Template
+  name: BotSoft
   links:
-    - https://github.com/CloudCannon/cause-jekyll-template
+    - https://botsoft.ai
 
 # -----
 # Build

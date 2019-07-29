@@ -1,10 +1,11 @@
 company_name: The Sheep Vote
-moto: Your chatbot store
-moto_subtext: ChatStore lets you create a Facebook Messenger bot for your store. It`s easy and free.
-mission_statement: The Sheep Vote is a non-profit organisation started in 2005 by the great shepard, Wooly McBaa.
+moto: Chatbot development for developers
+moto_subtext: Develop Facebook Messenger chatbots using the tools you are already familiar with.
+mission_statement: Develop Facebook Messenger chatbots using the tools you are already familiar with.
+mission_long: We believe that chatbot development is NOT for marketers - it is for DEVELOPERS. <br />This is the beginning of chatbots era and BotSoft provides the framework for rapid development and deployment of native Facebook Messenger chatbots.
 address: 123 Example Street, City
 phone: +1 123 456 7891
-email: donate@yourwebsite.com
-facebook: CloudCannon
-twitter: CloudCannonApp
-google_plus: +CloudCannon
+email: hello@botsoft.ai
+facebook: botsoftpage
+twitter: Bot__Soft
+google_plus: 
