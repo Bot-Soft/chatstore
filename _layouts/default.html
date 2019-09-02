@@ -157,6 +157,18 @@
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
 
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '498860363814397',
+				autoLogAppEvents: true,
+				xfbml: true,
+				version: 'v4.0'
+			});
+		};
+	</script>
+	<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
 
 	<!-- Your customer chat code -->
 	<div class="fb-customerchat" page_id="111091440238269" theme_color="#3ecf8e"></div>
