@@ -182,6 +182,37 @@
 	<script src="{{ site.baseurl }}/js/nivo-lightbox.js"></script>
 	<script src="{{ site.baseurl }}/js/jquery.magnific-popup.min.js"></script>
 	<script src="{{ site.baseurl }}/js/main.js"></script>
+
+	<script>
+		function getUrlParameter(name) {
+			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		};
+
+		let headTitle = document.getElementById("head-title");
+		let headDescription = document.getElementById("head-description");
+
+		let varId = getUrlParameter("var") || 0;
+
+		let headVariants = [{
+				title: "Automate the interaction with your customers",
+				description: "Add a chatbot that handles the initial conversation with your prospects and works together with you."
+			},
+			{
+				title: "Sell Better Through Facebook Messenger",
+				description: "We help small businesses to attract new customers from Facebook and make a great first impression."
+			},
+			{
+				title: "Start selling through Facebook Messenger",
+				description: "We help small businesses to sell more, utilizing a new sales channel."
+			}
+		]
+
+		headTitle.innerHTML = headVariants[varId].title;
+		headDescription.innerHTML = headVariants[varId].description;
+	</script>
 </body>
 
 </html>

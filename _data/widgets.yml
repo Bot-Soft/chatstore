@@ -1,6 +1,9 @@
 - name: get-started
   display_name: Learn More
   enabled: true
+  
+- name: testimonial
+  enabled: true
 
 - name: business-plan
   enabled: true
@@ -21,14 +24,11 @@
   display_name: Team
   enabled: false
   
-- name: testimonial
-  enabled: false
-  
 - name: blog
   display_name: Blog
   enabled: false
   
 - name: contactus
-  display_name: Subscribe
-  enabled: false
+  display_name: 
+  enabled: true
   
