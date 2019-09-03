@@ -4,12 +4,14 @@
 
   $("#subscribe-btn").click(function (e) {
     e.preventDefault();
-    let email = $("#email").text();
-    console.log(email);
+    let email = $("#subscribe-email").val();
     $.ajax({
       type: "POST",
       url: "https://script.google.com/macros/s/AKfycbzMYJ_Z-8o7bc3ByQlBQGTk9XGra1LEZDNnsRKGNXaZYSqX4vb6/exec",
       data: email
+    }).always(function () {
+      $("#subscribe-email").val("");
+      $("#subscribe-btn").text("👍Thank You");
     });
   });
 
