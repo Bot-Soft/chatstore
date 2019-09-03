@@ -4,17 +4,12 @@
 
   $("#subscribe-btn").click(function (e) {
     e.preventDefault();
-    let email = $("#email");
-    // let datetime = new Date().getTime();
-    // $.ajax({
-    //   type: "POST",
-    //   url: "https://script.google.com/macros/s/AKfycbzMYJ_Z-8o7bc3ByQlBQGTk9XGra1LEZDNnsRKGNXaZYSqX4vb6/exec",
-    //   data: ["test", email]
-    // });
-    $.post("https://script.google.com/macros/s/AKfycbzMYJ_Z-8o7bc3ByQlBQGTk9XGra1LEZDNnsRKGNXaZYSqX4vb6/exec", email, function (result) {
-      return true;
-    }).fail(function (err) {
-      console.log(err);
+    let email = $("#email").text();
+    console.log(email);
+    $.ajax({
+      type: "POST",
+      url: "https://script.google.com/macros/s/AKfycbzMYJ_Z-8o7bc3ByQlBQGTk9XGra1LEZDNnsRKGNXaZYSqX4vb6/exec",
+      data: email
     });
   });
 
