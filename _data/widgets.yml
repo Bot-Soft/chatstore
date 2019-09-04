@@ -31,4 +31,8 @@
 - name: contactus
   display_name: 
   enabled: true
+
+- name: request-demo
+  display_name: Demo
+  enabled: true
   
