@@ -1,12 +1,23 @@
 - name: get-started
   display_name: Learn More
   enabled: true
-  
-- name: testimonial
+- name: personalization
   enabled: true
 
-- name: business-plan
+- name: engage
   enabled: true
+
+- name: need-growth
+  enabled: true
+
+- name: facebook-sample
+  enabled: true
+  
+- name: testimonial
+  enabled: false
+
+- name: business-plan
+  enabled: false
 
 - name: features
   display_name: Services
@@ -33,6 +44,5 @@
   enabled: true
 
 - name: request-demo
-  display_name: Demo
-  enabled: true
+  enabled: false
   

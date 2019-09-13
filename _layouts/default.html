@@ -133,6 +133,8 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/nivo-lightbox.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/responsive.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/aos.css">
+	
 </head>
 
 <body>
@@ -194,8 +196,11 @@
 	<script src="{{ site.baseurl }}/js/nivo-lightbox.js"></script>
 	<script src="{{ site.baseurl }}/js/jquery.magnific-popup.min.js"></script>
 	<script src="{{ site.baseurl }}/js/main.js"></script>
+	<script src="{{ site.baseurl }}/js/aos.js"></script>
 
 	<script>
+		AOS.init();
+		
 		function getUrlParameter(name) {
 			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
 			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
@@ -209,8 +214,8 @@
 		let varId = getUrlParameter("var") || 0;
 
 		let headVariants = [{
-				title: "Automate the interaction with your customers",
-				description: "Add a chatbot that handles the initial conversation with your prospects and works together with you."
+				title: "Chatbot that works together with you",
+				description: "ChatStore enables small and mid-size business owners to automate the interactions with their prospects and customers."
 			},
 			{
 				title: "Sell Better Through Facebook Messenger",
