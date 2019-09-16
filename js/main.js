@@ -2,6 +2,17 @@
 
   "use strict";
 
+  $(document).ready(function () {
+    var typedStrings = {
+      strings: ["PRODUCTS", "SERVICES", "BUSINESS"],
+      typeSpeed: 100,
+      loop: true,
+      backDelay: 1000
+    };
+
+    var typed = new Typed("#typedText", typedStrings);
+  });
+
   $("#subscribe-btn").click(function (e) {
     e.preventDefault();
     let email = $("#subscribe-email").val();
