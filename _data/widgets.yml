@@ -1,6 +1,10 @@
 - name: get-started
   display_name: Learn More
   enabled: true
+
+- name: business-plan
+  enabled: false
+
 - name: personalization
   enabled: true
 
@@ -14,9 +18,6 @@
   enabled: true
   
 - name: testimonial
-  enabled: false
-
-- name: business-plan
   enabled: false
 
 - name: features
