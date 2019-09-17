@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Chatbot that works together with you
+description: Your business in Facebook Messenger
 author:
   name:
   email:
