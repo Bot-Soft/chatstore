@@ -30,7 +30,7 @@
   
 - name: pricing
   display_name: Pricing
-  enabled: false
+  enabled: true
   
 - name: team
   display_name: Team
