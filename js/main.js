@@ -11,6 +11,8 @@
     };
 
     var typed = new Typed("#typedText", typedStrings);
+
+    $(".gumroad-button").addClass('btn btn-common').removeClass('gumroad-button');
   });
 
   $("#subscribe-btn").click(function (e) {
